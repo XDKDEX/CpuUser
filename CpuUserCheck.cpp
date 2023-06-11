@@ -24,6 +24,6 @@ int main(){
     __int64 kernel = _CompareFileTime(kernel_time, pre_kernel_time);
     __int64 user = _CompareFileTime(user_time, pre_user_time);
     // printf("%d\n%d\n%d\n",idle,kernel,user); -debug
-    printf("%f\n", ((kernel + user - idle) / (1.0 * (kernel + user))));
+    printf("%f", ((kernel + user - idle) / (1.0 * (kernel + user))));
     return main();
 }
